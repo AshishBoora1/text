@@ -5,6 +5,7 @@ import Link from "next/link";
 import { GetData } from "@/app/Context/Context";
 import { useState } from "react";
 import Navbar from "../../Navbar/page";
+import Image from "next/image";
 const raleway = Raleway({
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
   subsets: ["latin"],
@@ -100,11 +101,12 @@ const page = (dataa) => {
                     </div>
                   </div>
                   <div className=" mt-[30px] md:mt-[50px]">
-                    <img
+                    {/* <img
                       className="w-full"
                       src={value.detailsimg}
                       alt={value.title}
-                    />
+                    /> */}
+                    
                   </div>
                 </div>
               );
