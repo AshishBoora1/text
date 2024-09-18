@@ -3,7 +3,6 @@ import { RingLoader } from "react-spinners";
 import { Raleway } from "next/font/google";
 import Link from "next/link";
 import { GetData } from "@/app/Context/Context";
-import { useState } from "react";
 import Navbar from "../../Navbar/page";
 import Image from "next/image";
 const raleway = Raleway({
@@ -13,8 +12,6 @@ const raleway = Raleway({
 
 const page = (dataa) => {
   const { getprojectsdata } = GetData();
-  // react-hooks/rules-of-hooks
-  const [loading, setloading] = useState(true);
   return (
     <>
       <div
