@@ -13,6 +13,7 @@ const raleway = Raleway({
 
 const page = (dataa) => {
   const { getprojectsdata } = GetData();
+  // react-hooks/rules-of-hooks
   const [loading, setloading] = useState(true);
   return (
     <>
@@ -49,7 +50,7 @@ const page = (dataa) => {
           </div>
         )} */}
         <div className="py-[30px] md:py-[50px]">
-          <Navbar/>
+          <Navbar />
         </div>
         <div className=" container mx-auto px-3  xl:max-w-[1200px]">
           {getprojectsdata
@@ -74,6 +75,7 @@ const page = (dataa) => {
                       </div>
                       <div className=" w-6/12 sm:w-4/12 lg:w-2/12">
                         <div className=" bg-white ">
+                          {/* // @next/next/no-img-element */}
                           <img src={value.logo} alt="logo" />
                         </div>
                         <div className=" mt-5 text-end">
@@ -106,7 +108,6 @@ const page = (dataa) => {
                       src={value.detailsimg}
                       alt={value.title}
                     /> */}
-                    
                   </div>
                 </div>
               );

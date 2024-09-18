@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 const page = () => {
+  // react-hooks/rules-of-hooks
   const path = usePathname();
   return (
     <nav>
